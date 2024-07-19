@@ -119,7 +119,7 @@ router.put(
       await hotel.save();
       res.status(201).json(hotel);
     } catch (error) {
-      res.status(500).json({ message: error });
+      res.status(500).json({ message: "Somethin Went Wrong" });
     }
   }
 );
